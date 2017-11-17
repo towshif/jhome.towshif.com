@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-16T22:50:33-08:00</updated><id>http://localhost:4000/</id><title type="html">Konfuzed banda</title><subtitle>An amazing website.</subtitle><author><name>Towshif Ali</name><email>towshif@gmail.com</email></author><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-11-15T17:13:25-08:00</published><updated>2017-11-15T17:13:25-08:00</updated><id>http://localhost:4000/jekyll/update/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Towshif Ali</name><email>towshif@gmail.com</email></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Configuring a Fresh Ubuntu Install for Coders</title><link href="http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders/" rel="alternate" type="text/html" title="Configuring a Fresh Ubuntu Install for Coders" /><published>2017-11-15T17:13:25-08:00</published><updated>2017-11-15T17:13:25-08:00</updated><id>http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders</id><content type="html" xml:base="http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders/">&lt;blockquote&gt;
+  &lt;p&gt;Warning: Linux noob content below.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;how-to-create-a-sound-coding-environment-after-a-fresh-ubuntu-install&quot;&gt;How to create a sound coding environment after a fresh ubuntu install&lt;/h1&gt;
+
+&lt;p&gt;While I have been a coding enthusiast and Ubuntu has been my choice of OS as a hobbyist, I have always wanted to have a consistent coding environment across my installations without having to hunt for settings and configurations over the internet. Here I laid out a simple script with basic install procedures of various packages which has helped me and I would recommend for newbies. Note that most of my input is based on my limited experience and mostly focussed on Web development with platforms like nodejs, java, mysql, mongodb, Google cloud and some backend platforms including python. I did throw in some basic installations for browser (chrome), choice of editors (VSCode, Netbeans, IntelliJ, Vim) and some static html generators for blogging like Hugo, Jekyll and Sphynx (Python doc). I also tried to add configurations for my terminal zsh shell (guake terminal) with fonts and powerline packages that I like while working with git repos.&lt;/p&gt;
+
+&lt;p&gt;I used the following desktop configuration for this install however I dont think this has anything to do with HW. Even you can try &lt;code class=&quot;highlighter-rouge&quot;&gt;the same on a&lt;/code&gt; shared VM if you like which I &lt;code class=&quot;highlighter-rouge&quot;&gt;tested&lt;/code&gt; and worked for me.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;OS : Ubuntu 16.04 LTS&lt;/li&gt;
+  &lt;li&gt;cpu: Xeon quad core 2.36 ghz&lt;/li&gt;
+  &lt;li&gt;Ram: 24 Gb&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While I have researched these over the internet and compiled the following to suit my needs I feel this is still not an exhaustive one. I have added comments in this install script as guidance and you can choose to comment out or add packages that suits your needs.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# filename: after-ubuntu-installer.sh
+# ubuntu after install packages
+# update repository cache
+sudo apt-get update
+
+# install essential programs
+sudo apt-get install samba gdebi gparted curl openssh-server htop geany synaptic git vim nano default-jdk gimp gimp-data gimp-plugin-registry gimp-data-extras vlc browser-plugin-vlc yum
+
+# Install Python tools (2.7) - Pip
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install --upgrade pip
+sudo pip install --upgrade virtualenv
+
+# install essential databases: mongodb, mysql
+# configure each separately
+sudo apt-get install mysql-server mongodb-server
+
+# Install hugo, jekyll
+sudo apt-get install hugo jekyll
+
+
+# install apache OR nginx
+# for Apache @ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
+# post install: configure /etc/apache2/apache2.conf
+# verify with sudo apache2ctl configtest
+# sudo apt-get install apache2
+
+# for Nginx
+# post install configure: /etc/nginx/nginx.conf
+sudo apt-get install nginx
+
+# configure Vim with themes and features @ https://github.com/amix/vimrc
+git clone --depth=1 git://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_basic_vimrc.sh
+
+
+# install node js
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# install nvm
+sudo apt-get install build-essential libssl-dev
+curl -sL  https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh | bash
+chmod +x install_nvm.sh
+# install nvm locally for user in ~/
+./install_nvm.sh
+# export NVM_NODEJS_ORG_MIRROR=http://nodejs.or./dist
+
+
+# install chrome
+sudo apt-get install libnss3
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo gdebi google-chrome-stable_current_amd64.deb
+
+# install VS CODE
+# OR download *.deb file from vscode website and install using
+# sudo dpkg -i &amp;lt;file&amp;gt;.deb
+# sudo apt-get install -f # Install dependencies
+
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &amp;gt; microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo &quot;deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main&quot; &amp;gt; /etc/apt/sources.list.d/vscode.list'
+
+sudo apt-get update
+sudo apt-get install code # or code-insiders
+
+# install Netbeans 8.2 EE - download from the netbeans website and install with the following:
+# chmod +x &amp;lt;installer-file-name&amp;gt;.
+# use sudo (below) if you want to install on /opt directory
+# sudo ./&amp;lt;installer-file-name&amp;gt;
+# search for java_home using: (need to input while installing)
+# echo $(readlink -f /usr/bin/java | sed &quot;s:bin/java::&quot;)
+
+# install teamviewer [in progress]
+#sudo apt-get update
+
+# install teamviewer [in progress]
+#sudo apt-get update
+
+# install terminal awesome with guake, oh-my-zsh &amp;amp; powerline
+sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install zsh
+chsh -s $(which zsh)
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+# Install powerline font package
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+# edit .zsh.rc → ZSH_THEME=&quot;agnoster&quot;
+# fc-cache -f -v
+# add DEFAULT_USER=&quot;towshif&quot; or user username to hide user@domain$
+
+# Configure Samba / users &amp;lt;towshif&amp;gt; / pass (with smbpass)
+# Change /etc/samba/smb.conf
+# [Downloads]
+#  browseable = yes
+#  path = /home/towshif/Downloads
+#  read only = no
+
+# Add password for your user &amp;lt;towshif&amp;gt;
+sudo smbpasswd -a towshif
+
+# VSCode Sync Settings - gist token for upload
+# token &amp;lt;input ID from github&amp;gt;
+# Public GIST to share settings: Gist id: &amp;lt;input ID from github&amp;gt;
+
+# install vs code extensions; here is a list of all common ones for web devs
+code --install-extension AlanWalk.markdown-toc
+code --install-extension bungcip.better-toml
+code --install-extension chiehyu.vscode-astyle
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension dbankier.vscode-instant-markdown
+code --install-extension donjayamanne.jquerysnippets
+code --install-extension donjayamanne.python
+code --install-extension formulahendry.code-runner
+code --install-extension goessner.mdmath
+code --install-extension koehlma.markdown-math
+code --install-extension lior-chamla.google-fonts
+code --install-extension luggage66.VBScript
+code --install-extension mdickin.markdown-shortcuts
+code --install-extension ms-vscode.csharp
+code --install-extension ms-vscode.Theme-MarkdownKit
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension mushan.vscode-paste-image
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension searKing.preview-vscode
+code --install-extension Shan.code-settings-sync
+code --install-extension tht13.python
+code --install-extension tushortz.python-extended-snippets
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Towshif Ali</name><email>towshif@gmail.com</email></author><summary type="html">Warning: Linux noob content below.</summary></entry></feed>

@@ -1,0 +1,570 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.1 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Configuring a Fresh Ubuntu Install for Coders - Konfuzed banda</title>
+
+
+
+
+<meta name="description" content="  Warning: Linux noob content below.">
+
+
+
+
+<meta name="author" content="Towshif Ali">
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Konfuzed banda">
+<meta property="og:title" content="Configuring a Fresh Ubuntu Install for Coders">
+
+
+  <link rel="canonical" href="http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders/">
+  <meta property="og:url" content="http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders/">
+
+
+
+  <meta property="og:description" content="  Warning: Linux noob content below.">
+
+
+
+  <meta name="twitter:site" content="@towshif">
+  <meta name="twitter:title" content="Configuring a Fresh Ubuntu Install for Coders">
+  <meta name="twitter:description" content="  Warning: Linux noob content below.">
+  <meta name="twitter:url" content="http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+    <meta name="twitter:creator" content="@Towshif Ali">
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-11-15T17:13:25-08:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Towshif Ali",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Konfuzed banda Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">Konfuzed banda</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/collection-archive/">Sample Collections</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/sitemap/">Sitemap</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Towshif Ali</h3>
+    
+      <p class="author__bio" itemprop="description">
+        I am an amazing person.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">United States</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:towshif@gmail.com">
+            <meta itemprop="email" content="towshif@gmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://plus.google.com/+towshif" itemprop="sameAs">
+            <i class="fa fa-fw fa-google-plus-square" aria-hidden="true"></i> Google+
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://bitbucket.org/towshif" itemprop="sameAs">
+            <i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://github.com/towshif" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Configuring a Fresh Ubuntu Install for Coders">
+    <meta itemprop="description" content="  Warning: Linux noob content below.">
+    <meta itemprop="datePublished" content="November 15, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Configuring a Fresh Ubuntu Install for Coders
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <blockquote>
+  <p>Warning: Linux noob content below.</p>
+</blockquote>
+
+<h1 id="how-to-create-a-sound-coding-environment-after-a-fresh-ubuntu-install">How to create a sound coding environment after a fresh ubuntu install</h1>
+
+<p>While I have been a coding enthusiast and Ubuntu has been my choice of OS as a hobbyist, I have always wanted to have a consistent coding environment across my installations without having to hunt for settings and configurations over the internet. Here I laid out a simple script with basic install procedures of various packages which has helped me and I would recommend for newbies. Note that most of my input is based on my limited experience and mostly focussed on Web development with platforms like nodejs, java, mysql, mongodb, Google cloud and some backend platforms including python. I did throw in some basic installations for browser (chrome), choice of editors (VSCode, Netbeans, IntelliJ, Vim) and some static html generators for blogging like Hugo, Jekyll and Sphynx (Python doc). I also tried to add configurations for my terminal zsh shell (guake terminal) with fonts and powerline packages that I like while working with git repos.</p>
+
+<p>I used the following desktop configuration for this install however I dont think this has anything to do with HW. Even you can try <code class="highlighter-rouge">the same on a</code> shared VM if you like which I <code class="highlighter-rouge">tested</code> and worked for me.</p>
+
+<ul>
+  <li>OS : Ubuntu 16.04 LTS</li>
+  <li>cpu: Xeon quad core 2.36 ghz</li>
+  <li>Ram: 24 Gb</li>
+</ul>
+
+<p>While I have researched these over the internet and compiled the following to suit my needs I feel this is still not an exhaustive one. I have added comments in this install script as guidance and you can choose to comment out or add packages that suits your needs.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># filename: after-ubuntu-installer.sh
+# ubuntu after install packages
+# update repository cache
+sudo apt-get update
+
+# install essential programs
+sudo apt-get install samba gdebi gparted curl openssh-server htop geany synaptic git vim nano default-jdk gimp gimp-data gimp-plugin-registry gimp-data-extras vlc browser-plugin-vlc yum
+
+# Install Python tools (2.7) - Pip
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install --upgrade pip
+sudo pip install --upgrade virtualenv
+
+# install essential databases: mongodb, mysql
+# configure each separately
+sudo apt-get install mysql-server mongodb-server
+
+# Install hugo, jekyll
+sudo apt-get install hugo jekyll
+
+
+# install apache OR nginx
+# for Apache @ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
+# post install: configure /etc/apache2/apache2.conf
+# verify with sudo apache2ctl configtest
+# sudo apt-get install apache2
+
+# for Nginx
+# post install configure: /etc/nginx/nginx.conf
+sudo apt-get install nginx
+
+# configure Vim with themes and features @ https://github.com/amix/vimrc
+git clone --depth=1 git://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_basic_vimrc.sh
+
+
+# install node js
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# install nvm
+sudo apt-get install build-essential libssl-dev
+curl -sL  https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh | bash
+chmod +x install_nvm.sh
+# install nvm locally for user in ~/
+./install_nvm.sh
+# export NVM_NODEJS_ORG_MIRROR=http://nodejs.or./dist
+
+
+# install chrome
+sudo apt-get install libnss3
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo gdebi google-chrome-stable_current_amd64.deb
+
+# install VS CODE
+# OR download *.deb file from vscode website and install using
+# sudo dpkg -i &lt;file&gt;.deb
+# sudo apt-get install -f # Install dependencies
+
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" &gt; /etc/apt/sources.list.d/vscode.list'
+
+sudo apt-get update
+sudo apt-get install code # or code-insiders
+
+# install Netbeans 8.2 EE - download from the netbeans website and install with the following:
+# chmod +x &lt;installer-file-name&gt;.
+# use sudo (below) if you want to install on /opt directory
+# sudo ./&lt;installer-file-name&gt;
+# search for java_home using: (need to input while installing)
+# echo $(readlink -f /usr/bin/java | sed "s:bin/java::")
+
+# install teamviewer [in progress]
+#sudo apt-get update
+
+# install teamviewer [in progress]
+#sudo apt-get update
+
+# install terminal awesome with guake, oh-my-zsh &amp; powerline
+sudo apt-get update &amp;&amp; sudo apt-get install zsh
+chsh -s $(which zsh)
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+# Install powerline font package
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+# edit .zsh.rc → ZSH_THEME="agnoster"
+# fc-cache -f -v
+# add DEFAULT_USER="towshif" or user username to hide user@domain$
+
+# Configure Samba / users &lt;towshif&gt; / pass (with smbpass)
+# Change /etc/samba/smb.conf
+# [Downloads]
+#  browseable = yes
+#  path = /home/towshif/Downloads
+#  read only = no
+
+# Add password for your user &lt;towshif&gt;
+sudo smbpasswd -a towshif
+
+# VSCode Sync Settings - gist token for upload
+# token &lt;input ID from github&gt;
+# Public GIST to share settings: Gist id: &lt;input ID from github&gt;
+
+# install vs code extensions; here is a list of all common ones for web devs
+code --install-extension AlanWalk.markdown-toc
+code --install-extension bungcip.better-toml
+code --install-extension chiehyu.vscode-astyle
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension dbankier.vscode-instant-markdown
+code --install-extension donjayamanne.jquerysnippets
+code --install-extension donjayamanne.python
+code --install-extension formulahendry.code-runner
+code --install-extension goessner.mdmath
+code --install-extension koehlma.markdown-math
+code --install-extension lior-chamla.google-fonts
+code --install-extension luggage66.VBScript
+code --install-extension mdickin.markdown-shortcuts
+code --install-extension ms-vscode.csharp
+code --install-extension ms-vscode.Theme-MarkdownKit
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension mushan.vscode-paste-image
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension searKing.preview-vscode
+code --install-extension Shan.code-settings-sync
+code --install-extension tht13.python
+code --install-extension tushortz.python-extended-snippets
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#jekyll" class="page__taxonomy-item" rel="tag">jekyll</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/categories/#update" class="page__taxonomy-item" rel="tag">update</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-11-15T17:13:25-08:00">November 15, 2017</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=towshif&text=Configuring a Fresh Ubuntu Install for Coders http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/jekyll/update/configuring-a-fresh-Ubuntu-install-for-coders/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="http://localhost:4000/jekyll/update/welcome-to-jekyll/" class="pagination--pager" title="Welcome to Jekyll!
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/towshif"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="http://github.com/towshif"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+      <li><a href="http://bitbucket.org/towshif"><i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 Towshif Ali. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
